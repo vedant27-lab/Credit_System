@@ -1,7 +1,7 @@
 import os
 from celery import Celery
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'creditSystem.creditSystem.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'creditSystem.settings')
 
 app = Celery('creditSystem')
 

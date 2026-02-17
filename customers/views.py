@@ -26,7 +26,7 @@ class RegisterView(APIView):
             )
 
             return Response({
-                "customer_id": customer.customer_id,
+                "customer_id": customer.id,
                 "name": f"{customer.first_name} {customer.last_name}",
                 "approved_limit": approved_limit
             }, status=status.HTTP_201_CREATED)
